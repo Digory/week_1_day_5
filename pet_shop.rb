@@ -42,3 +42,7 @@ def remove_pet_by_name(pet_shop, name)
     pet_shop[:pets].delete(each_pet) if each_pet[:name] == name
   end
 end
+
+def add_pet_to_stock(pet_shop, new_pet)
+  pet_shop[:pets] << new_pet
+end
