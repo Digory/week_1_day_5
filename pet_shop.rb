@@ -62,3 +62,9 @@ end
 def add_pet_to_customer(customer, new_pet)
   customer[:pets] << new_pet
 end
+
+def customer_can_afford_pet(customer, new_pet)
+  customer_cash = customer[:cash]
+  pet_value = new_pet[:price]
+  return customer_cash >= pet_value
+end
